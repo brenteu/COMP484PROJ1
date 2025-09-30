@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  background: url("https://images.unsplash.com/photo-1606663889134-c56a4953ea2e")
+    no-repeat center center fixed;
+  background-size: cover;
+  color: #222;
+}
+
+/* Sticky glass nav header */
+.site-header {
+  position: sticky;
+  top: 0;
+  background: rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 100;
+  color: #000;
+}
+.header-content {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  color: #000;
+}
+.site-header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #000;
+}
+.site-header nav {
+  margin-top: 10px;
+}
+.site-header nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+.site-header nav a:hover,
+.site-header nav a.active {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Hero section */
+.hero {
+  height: 70vh;
+  background: url("https://images.unsplash.com/photo-1516567727245-7c53e1bbf8f5")
+    no-repeat center center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-overlay {
+  background: rgba(255, 255, 255, 0.25);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  padding: 40px;
+  border-radius: 16px;
+  text-align: center;
+  max-width: 700px;
+  color: #222;
+}
+
+/* Glass content cards */
+.glass-card {
+  background: rgba(255, 255, 255, 0.65);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  margin: 40px auto;
+  padding: 30px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+  max-width: 900px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.glass-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.18);
+}
+.glass-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin: 20px 0;
+}
+.glass-card h2 {
+  margin-top: 0;
+  color: #1c1c1c;
+}
+.glass-card ul {
+  padding-left: 20px;
+}
+
+/* Table styling inside cards */
+.glass-card table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 0.95rem;
+}
+.glass-card caption {
+  caption-side: top;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left;
+  color: #333;
+}
+.glass-card th,
+.glass-card td {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 12px;
+  text-align: left;
+}
+.glass-card th {
+  background: rgba(255, 255, 255, 0.8);
+  font-weight: 600;
+}
+.glass-card tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* Homepage hero background */
+.hero.home-hero {
+  background-image: url("./images/snowboarder.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero.styles-hero {
+  background-image: url("./images/styleshead.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero.riders-hero {
+  background-image: url("./images/riderhead.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero.tips-hero {
+  background-image: url("./images/tipshead.jpg");
+  background-size: cover;
+  background-position: center;
+}
