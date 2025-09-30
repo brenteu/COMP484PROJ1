@@ -172,16 +172,25 @@
         <h2>Watch Snowboarding in Action</h2>
         <!-- object element -->
         <object
-          data="https://www.youtube.com/watch?v=Gm2gLbsahB8E"
+          data="https://www.youtube.com/embed/Gm2gLbsahB8E"
           type="text/html"
           width="560"
           height="315"
         >
-          Your browser does not support embedded videos.
-          <a href="https://www.youtube.com/watch?v=Gm2gLbsahB8" target="_blank"
-            >Watch on YouTube</a
-          >
+          <!-- This content shows if the object cannot render -->
+          <p>Your browser cannot display embedded videos.</p>
         </object>
+
+        <!-- Always visible fallback link -->
+        <p>
+          <a
+            href="https://www.youtube.com/watch?v=Gm2gLbsahB8E"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Watch the video on YouTube
+          </a>
+        </p>
       </section>
     </main>
   </body>

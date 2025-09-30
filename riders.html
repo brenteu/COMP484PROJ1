@@ -117,7 +117,6 @@
         </table>
       </section>
 
-      <!-- Optional Video Embed -->
       <section class="glass-card">
         <h2>Watch Riders in Action</h2>
         <object
@@ -126,11 +125,20 @@
           width="560"
           height="315"
         >
-          Your browser does not support embedded videos.
-          <a href="https://www.youtube.com/watch?v=t5NWGT0yUzg" target="_blank"
-            >Watch on YouTube</a
-          >
+          <!-- This content shows if the object cannot render -->
+          <p>Your browser cannot display embedded videos.</p>
         </object>
+
+        <!-- Always visible fallback link -->
+        <p>
+          <a
+            href="https://www.youtube.com/watch?v=t5NWGT0yUzg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Watch the video on YouTube
+          </a>
+        </p>
       </section>
     </main>
   </body>
