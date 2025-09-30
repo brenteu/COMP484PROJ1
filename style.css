@@ -1,8 +1,6 @@
 body {
   margin: 0;
   font-family: "Roboto", Arial, sans-serif;
-  background: url("https://images.unsplash.com/photo-1606663889134-c56a4953ea2e")
-    no-repeat center center fixed;
   background-size: cover;
   color: #222;
 }
@@ -50,8 +48,6 @@ body {
 /* Hero section */
 .hero {
   height: 70vh;
-  background: url("https://images.unsplash.com/photo-1516567727245-7c53e1bbf8f5")
-    no-repeat center center;
   background-size: cover;
   position: relative;
   display: flex;
